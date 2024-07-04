@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+.left-container {
+    /* position: absolute; */
+}
+
+.left-container img {
+    width: 35vw;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.img-description {
+    position: relative;
+    bottom: 3vh;
+    left: 10%;
+    font-size: calc(10px + 0.8vw);
+}

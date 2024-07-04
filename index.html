@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left-container">
+            <img src="polarbear.jpg" alt="A standing polar bear waving hi to the camera">
+            <div class="img-description">Photo by 
+                <a href="https://unsplash.com/photos/polar-bear-on-snow-covered-ground-during-daytime-qQWV91TTBrE"
+                target="_blank">Hans-Jurgen Mager</a>
+            </div>
+        </div>
+
+        <div class="right-container">
+            <div class="paragraph">
+                <p>This is not a real online service! Sign up now to get started.</p>
+            </div>
+
+            <form action="" method="post" class="form">
+                <label for="first-name">FIRST NAME</label>
+                <input type="text" name="first-name" id="first-name" required>
+                
+                <label for="last-name">LAST NAME</label>
+                <input type="text" name="last-name" id="last-name">
+                
+                <label for="email">EMAIL</label>
+                <input type="email" name="email" id="email" required>
+                
+                <label for="phone">PHONE NUMBER</label>
+                <input type="tel" name="phone" id="phone">
+
+                <label for="pw">PASSWORD</label>
+                <input type="text" name="pw" id="pw" required>
+
+                <label for="pw-confirm">CONFIRM PASSWORD</label>
+                <input type="text" name="pw-confirm" id="pw-confirm" required>     
+            </form>
+
+            <div class="bottom">
+                <button type="submit">Create Account</button>
+                <p>Already have an account? Log in</a></p>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
