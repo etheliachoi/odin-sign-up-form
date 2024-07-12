@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    --black: rgb(43, 43, 43);
 }
 
 .container {
@@ -26,6 +27,7 @@
     font-size: 20px;
     padding-right: 15%;
     align-content: end;
+    color: var(--black);
 }
 
 .right-top .paragraph {
@@ -75,6 +77,35 @@
     /* box-shadow: ; */
 }
 
+.right-mid p {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 20px;
+    color: var(--black);
+}
+
+.form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 14%;
+    row-gap: 8%;
+    padding-right: 20%;
+}
+
+.right-mid .field {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.field label {
+    font-size: 12px;
+}
+
+.field input {
+    height: 20px;
+    padding: 12px 4px;
+}
 
 .left img {
     width: 100%;
