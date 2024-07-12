@@ -123,7 +123,7 @@
     box-shadow: 3px 3px 4px 1px rgba(128, 128, 128, 0.5);
 }
 
-.field input:invalid {
+.field input:required:user-invalid {
     border: 1.5px solid red;
 }
 
@@ -133,15 +133,8 @@
     object-fit: cover;
 }
 
-.img-description {
-    position: absolute;
-    bottom: 3vh;
-    left: 10%;
-    font-size: calc(10px + 0.8vw);
-}
-
 .background {
-    position: fixed;
+    position: absolute;
     top: 20px;
     left: 0;
     height: 10%;
@@ -170,4 +163,18 @@
     font-size: calc(50% + 3.5vw);
     padding-top: 2%; /* added bc this font starts at a diff baseline */
     font-family: Norse;
+    color: var(--black);
+}
+
+.img-description {
+    position: absolute;
+    bottom: 2%;
+    left: 16.5%;
+    font-size: calc(5px + 0.8vw);
+    font-family: Roboto, sans-serif;
+    color: rgb(80, 25, 135, 1);
+}
+
+.img-description a {
+    text-decoration: none;
 }

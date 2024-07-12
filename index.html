@@ -22,7 +22,7 @@
 
         <div class="right-mid">
             <p>Let's do this!</p>
-            <form action="" method="post" class="form">
+            <form action="#" method="post" class="form" id="my-form">
                 <div class="field">
                     <label for="first-name">FIRST NAME</label>
                     <input type="text" name="first-name" id="first-name">
@@ -45,30 +45,32 @@
 
                 <div class="field">
                     <label for="pw">PASSWORD</label>
-                    <input type="text" name="pw" id="pw" required>
+                    <input type="password" name="pw" id="pw" pattern="[0-9a-fzA-Z]{8,12}" title="* Please enter a password with the combination of a-Z, A-Z, 0-9 and within 8-12 characters." required>
                 </div>
 
                 <div class="field">
                     <label for="pw-confirm">CONFIRM PASSWORD</label>
-                    <input type="text" name="pw-confirm" id="pw-confirm" required>
+                    <input type="password" name="pw-confirm" id="pw-confirm" pattern="[0-9a-fzA-Z]{8,12}" title="* Please enter a password with the combination of a-Z, A-Z, 0-9 and within 8-12 characters." required>
                 </div>     
             </form>
         </div>
 
         <div class="right-bottom">
-                <button type="submit">Create Account</button>
+                <button type="submit" form="my-form">Create Account</button>
                 <p>Already have an account? <a href="https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-sign-up-form" target="_blank">Log in</a></p>
         </div>
     </div>
-    <div class="img-description">Photo by 
-        <a href="https://unsplash.com/photos/polar-bear-on-snow-covered-ground-during-daytime-qQWV91TTBrE"
-        target="_blank">Hans-Jurgen Mager</a>
-    </div>
+    
     <div class="background">
         <div class="content">
             <img src="odin-lined.png" alt="The Odin Project logo" class="logo">
             <p class="odin">ODIN</p>
-        </div>
+        </div> 
+    </div>
+
+    <div class="img-description">Photo by 
+        <a href="https://unsplash.com/photos/polar-bear-on-snow-covered-ground-during-daytime-qQWV91TTBrE"
+        target="_blank">Hans-Jurgen Mager</a>
     </div>
 </body>
 </html>
