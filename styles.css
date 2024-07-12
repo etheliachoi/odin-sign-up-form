@@ -19,7 +19,6 @@
 }
 
 .right-top {
-    border: 3px solid blue;
     grid-column-start: 2;
     grid-row-start: 1;
     font-family: Roboto, sans-serif;
@@ -34,32 +33,27 @@
     grid-template-rows: 1fr min-content;
     row-gap: 18px;
     align-content: end;
-    padding-bottom: 15px;
+    padding-bottom: 25px;
 }
 
 .right-mid {
     border: 3px dotted red;
     grid-column-start: 2;
     grid-row-start: 2;
-    font-family: Roboto Condensed, sans-serif;
+    font-family: Roboto, sans-serif;
     font-weight: bold;
     color: grey;
 }
 
 .right-bottom {
-    border: 3px solid green;
     grid-column-start: 2;
     grid-row-start: 3;
     font-family: Roboto, sans-serif;
+    padding-top: 24px;
 }
 
 .empty, .right-top, .right-bottom {
-    background-color: rgb(236, 236, 236);
-}
-
-
-.right-top {
-
+    background-color: rgba(236, 236, 236, 0.5);
 }
 
 .right-bottom a {
@@ -77,6 +71,7 @@
     border: none;
     border-radius: 6px;
     cursor: pointer;
+    margin-bottom: 24px;
     /* box-shadow: ; */
 }
 
