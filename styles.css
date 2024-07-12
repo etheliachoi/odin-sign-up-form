@@ -40,7 +40,6 @@
 }
 
 .right-mid {
-    /* border: 3px dotted red; */
     grid-column-start: 2;
     grid-row-start: 2;
     font-family: Roboto, sans-serif;
@@ -152,7 +151,23 @@
 
 .logo {
     height: 80%;
-    position: absolute;
-    left: 30%;
-    top: 10%;
+}
+
+.content {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5vw;
+}
+
+@font-face {
+    font-family: Norse;
+    src: url("norse.bold.otf") format("opentype");
+}
+
+.content .odin {
+    font-size: calc(50% + 3.5vw);
+    padding-top: 2%; /* added bc this font starts at a diff baseline */
+    font-family: Norse;
 }
